@@ -11,7 +11,8 @@ public class Car {
         
 		// new Car(); this is the object of Car class
 		// new keyword is used to create the object  
-		// a,b,c -----> Object reference cariables
+		// a,b,c -----> Object reference variables
+		
 		Car a = new Car();
 		Car b =  new Car();
 		Car c  = new Car();
@@ -24,7 +25,7 @@ public class Car {
 		
 		c.mod = 2016;
 		c.wheel = 4;
-		
+		System.out.println("Before assigning the reference");
 		System.out.println(a.mod);
 		System.out.println(a.wheel);
 
@@ -33,6 +34,17 @@ public class Car {
 		
 		System.out.println(c.mod);
 		System.out.println(c.wheel);
+		
+		System.out.println("After shifting the refrence");
+		a=b;
+		b=c;
+		c=a;
+		
+		a.mod = 10;
+		System.out.println(a.mod); // 10
+		c.mod = 20;
+		System.out.println(a.mod); //20
+		System.out.println(c.mod);
 		
 	}
 
