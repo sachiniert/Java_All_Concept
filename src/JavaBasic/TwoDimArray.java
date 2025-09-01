@@ -6,7 +6,7 @@ public class TwoDimArray {
 		String x[][] = new String[3][5];
 		System.out.println(x.length); //total no of rows  =3
 		System.out.println(x[0].length); //5 -- total no of cols = 5
-// 2st row
+// 1st row
 		x[0][0] ="A";
 		x[0][1] ="B";
 		x[0][2] = "C";
@@ -28,7 +28,9 @@ public class TwoDimArray {
 		x[2][4] ="E2";
 		
 		System.out.println(x[1][2]);
+		System.out.println("****");
 		System.out.println(x[2][2]);
+		System.out.println("***********");
 		System.out.println(x[0][4]);
 		
 		//print the all the value of 2d array:use for loop
